@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chalk": "^2.1.0",
     "puppeteer": "^0.10.2"
   }
 }
