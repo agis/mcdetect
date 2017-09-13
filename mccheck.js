@@ -2,11 +2,7 @@
 
 const puppeteer = require('puppeteer');
 const chalk = require('chalk');
-
-const urls = [
-  'https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/xmlhttprequest-example.html',
-  'https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/passive-mixed-content.html',
-];
+const config = require('./config.json');
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -27,7 +23,7 @@ const urls = [
       console.log(chalk.yellow("\tWARNING: ") + r.request.url);
   });
 
-  for (let url of urls) {
+  for (let url of config.targets) {
     console.log(chalk.green("CHECKING ") + url + " ...");
     await page.goto(url);
   }
