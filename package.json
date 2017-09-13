@@ -1,4 +1,13 @@
 {
+  "name": "mccheck",
+  "version": "1.0.0",
+  "repository": "git@github.com:agis/mccheck.git",
+  "author": "Agis Anastasopoulos <agis.anast@gmail.com>",
+  "preferGlobal": true,
+  "bin": {
+    "mccheck": "mccheck.js"
+  },
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
     "puppeteer": "^0.10.2"
