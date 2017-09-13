@@ -1,0 +1,5 @@
+- are there false negatives?
+- scrape mode (with max depth)
+- JSON output, non-colored output if redirected
+- license
+- cli app
