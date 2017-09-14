@@ -1,7 +1,7 @@
 # mcdetect - catch mixed content issues in the wild
 
-mcdetect is a tool to detect [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
-issues with _confidence_.
+_mcdetect_ is a tool to detect [mixed content issues](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
+with confidence.
 
 ![mcdetect demo](demo.gif)
 
