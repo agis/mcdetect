@@ -11,7 +11,7 @@
   "engines": {
     "node": ">=7.6.0"
   },
-  "description": "Detect mixed content warnings & errors w/ Headless Chrome",
+  "description": "Catch mixed content issues in the wild",
   "author": "Agis Anastasopoulos <agis.anast@gmail.com> (http://agis.io)",
   "repository": "agis/mcdetect",
   "homepage": "https://github.com/agis/mcdetect",
