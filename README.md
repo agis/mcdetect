@@ -1,8 +1,8 @@
 # mcdetect - catch mixed content issues in the wild
 [![NPM version](https://img.shields.io/npm/v/mcdetect.svg)](https://www.npmjs.com/package/mcdetect)
 
-_mcdetect_ is a tool to detect [mixed content issues](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
-with confidence.
+_mcdetect_ is a tool that detects [mixed content issues](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
+with certainty.
 
 ![mcdetect demo](demo.gif)
 
@@ -16,6 +16,7 @@ can be detected statically.
 _mcdetect_ can determine with absolute certainty if any mixed content
 errors or warnings actually occur on a page. It does this by visiting
 the pages and evaluating their Javascript like a regular browser would do.
+In other words, it _does not report false negatives_.
 
 It is uses [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
 that shipped with Chrome 59 and the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/).
