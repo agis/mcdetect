@@ -3,14 +3,14 @@
 const puppeteer = require('puppeteer');
 const chalk = require('chalk');
 
+console.log(process.argv.length);
 const argv = require('yargs')
   .usage('Usage: $0 [url ...] [options]')
   .config().alias('c', 'config')
   .option('e', {
     alias: 'errexit',
     describe: 'exit if a target URL cannot be fetched',
-    boolean: true
-  })
+    boolean: true })
   .help().alias('h', 'help')
   .argv;
 
@@ -42,21 +42,22 @@ const argv = require('yargs')
     }
   });
 
-  for (let url of argv._.concat(argv.targets)) {
-    console.log(chalk.cyan("Checking ") + url + " ...");
+  targets = argv._.concat(argv.targets);
+
+  for (let t of targets) {
+    console.log(chalk.cyan("Checking ") + t + " ...");
 
     try {
-      await page.goto(url);
+      await page.goto(t);
     } catch(e) {
       console.log("\t"+chalk.red(e));
       if (argv.errexit)
         process.exit(1);
     }
-
-    console.log();
   }
 
   console.log(
+    "Checked " + targets.length + " targets in total | " +
     "Total blocked resources: " + mcErrors + " | " +
     "Total warnings ('optionally-blockable'): " + mcErrors
   );

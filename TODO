@@ -1,8 +1,8 @@
 - are there false negatives?
+- tests
 - error handling (modes: exit on error, ignore errors, report errors)
 - scrape mode (with max depth)
-- license
 - interactive mode
 - report HTTP-only internal links
 - JSON output, non-colored output if redirected
-- summary
+- read targets from stdin
