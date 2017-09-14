@@ -26,7 +26,9 @@ that shipped with Chrome 59 and the [DevTools Protocol](https://chromedevtools.g
 
 ## Installation
 
-TODO
+```shell
+$ npm install -g mcdetect
+```
 
 ## Usage
 
