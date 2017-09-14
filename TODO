@@ -6,3 +6,4 @@
 - report HTTP-only internal links
 - JSON output, non-colored output if redirected
 - read targets from stdin
+- auto-include https in targets

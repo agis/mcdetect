@@ -1,21 +1,30 @@
 {
-  "name": "mccheck",
+  "name": "mcdetect",
   "version": "1.0.0",
   "preferGlobal": true,
-  "bin": { "mccheck": "bin/mccheck.js" },
-  "files": ["bin"],
-  "engines": { "node": ">=7.6.0" },
+  "bin": {
+    "mcdetect": "bin/mcdetect.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "description": "Detect mixed content warnings & errors w/ Headless Chrome",
+  "author": "Agis Anastasopoulos <agis.anast@gmail.com> (http://agis.io)",
+  "repository": "agis/mcdetect",
+  "homepage": "https://github.com/agis/mcdetect",
+  "bugs": "https://github.com/agis/mcdetect/issues",
+  "keywords": [
+    "https",
+    "mixed-content",
+    "headless-chrome"
+  ],
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
     "puppeteer": "^0.10.2",
     "yargs": "^8.0.2"
-  },
-
-  "description": "Detect mixed content warnings & errors w/ Headless Chrome",
-  "author": "Agis Anastasopoulos <agis.anast@gmail.com> (http://agis.io)",
-  "repository": "agis/mccheck",
-  "homepage": "https://github.com/agis/mccheck",
-  "bugs": "https://github.com/agis/mccheck/issues",
-  "keywords": ["https", "mixed-content", "headless-chrome"],
-  "license": "MIT"
+  }
 }
