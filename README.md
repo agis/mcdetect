@@ -1,4 +1,5 @@
 # mcdetect - catch mixed content issues in the wild
+[![NPM version](https://img.shields.io/npm/v/mcdetect.svg)](https://www.npmjs.com/package/mcdetect)
 
 _mcdetect_ is a tool to detect [mixed content issues](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
 with confidence.
