@@ -5,17 +5,17 @@ const chalk = require('chalk');
 const { URL } = require('url');
 
 const yargs = require('yargs')
-  .usage('Usage: $0 [url ...] [options]')
+  .usage('Usage: mcdetect [url ...] [options]')
   .config().alias('c', 'config')
   .option('e', {
     alias: 'errexit',
     describe: 'exit if a target URL cannot be fetched',
     boolean: true })
   .help().alias('h', 'help')
-  .example('$ $0 https://example.com', 'Scan a single target')
-  .example('$ $0 example.com example.com/foo',
+  .example('$ mcdetect https://example.com', 'Scan a single target')
+  .example('$ mcdetect example.com example.com/foo',
     'Scan multiple targets; exit immediately if an error occurs')
-  .example('$ $0 --config targets.json', 'Scan targets from a config file');
+  .example('$ mcdetect --config targets.json', 'Scan targets from a config file');
 
 const argv = yargs.argv;
 
