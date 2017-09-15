@@ -1,6 +1,6 @@
 {
   "name": "mcdetect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "preferGlobal": true,
   "bin": {
     "mcdetect": "bin/mcdetect.js"
