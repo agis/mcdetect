@@ -18,12 +18,11 @@ errors or warnings actually occur on a page. It does this by visiting
 the pages and evaluating their Javascript like a regular browser would do.
 In other words, it _does not report false negatives_.
 
-It is uses [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
+It does this by leveraging [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
 that shipped with Chrome 59 and the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/).
 
 ## Requirements
 
-- Chrome 59 or later
 - Node 7.6.0 or later
 
 ## Installation
