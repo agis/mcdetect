@@ -16,11 +16,12 @@ const yargs = require('yargs')
   .example('$ $0 example.com example.com/foo',
     'Scan multiple targets; exit immediately if an error occurs')
   .example('$ $0 --config targets.json', 'Scan targets from a config file');
+
 const argv = yargs.argv;
 
 if (argv._.length == 0 && !argv.config) {
   yargs.showHelp();
-  console.log('You must provide either an argument or a configuration file');
+  console.log('No target(s) specified. Provide at least one either as argument or with a configuration file');
   process.exit(1);
 }
 
@@ -48,7 +49,7 @@ var dirtyTargets = 0;
 
   page._client.on('Network.requestWillBeSent', r => {
     if (r['request']['mixedContentType'] == 'optionally-blockable') {
-      console.log(chalk.yellow('\tOptionally blockable: ') + r.request.url);
+      console.log(chalk.yellow('\tOptionally Blockable: ') + r.request.url);
       mcWarnings++;
     }
   });

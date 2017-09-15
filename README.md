@@ -39,7 +39,8 @@ Checking a single target page:
 $ mcdetect https://example.com https://google.com
 ```
 
-Checking multiple targets (the protocol can be omitted):
+Checking multiple targets (if no protocol is specified, it is assumed to be
+"https://"):
 ```shell
 $ mcdetect example.com google.com
 ```
@@ -50,15 +51,15 @@ Multiple targets can also be given via a config file:
 $ cat my_urls.json
 {
   "targets": [
-    "https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/xmlhttprequest-example.html",
-    "https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/passive-mixed-content.html"
+    "googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/xmlhttprequest-example.html",
+    "googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/passive-mixed-content.html"
   ]
 }
 
 $ mcdetect --config my_urls.json
 ```
 
-For more usage examples see `mcdetect --help`.
+For more usage examples and options see `mcdetect --help`.
 
 ## TODO
 
@@ -72,4 +73,3 @@ For more usage examples see `mcdetect --help`.
 ## License
 
 mcdetect is licensed under MIT. See [LICENSE](LICENSE).
-
