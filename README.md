@@ -10,7 +10,7 @@ with certainty.
 
 Tools used to catch mixed content issues often rely
 on parsing the DOM to determine if insecure content _will_ be loaded in a specific
-page. Consequently they may report false negatives since not all such issues
+page. Consequently, they may report false negatives since not all such issues
 can be detected statically.
 
 _mcdetect_ can determine with absolute certainty if any mixed content
