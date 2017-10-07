@@ -78,7 +78,7 @@ var dirtyTargets = 0;
   }
 
   summary();
-  browser.close();
+  await browser.close();
 })();
 
 function summary() {
