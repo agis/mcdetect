@@ -68,6 +68,12 @@ var dirtyTargets = 0;
     try {
       await page.goto(t);
       targetsChecked++;
+      var links = await page.$$('a');
+      console.log(await links[0].jsonValue());
+      console.log(await links[1].jsonValue());
+      console.log(await links[3].jsonValue());
+      console.log(await links[5].jsonValue());
+
     } catch(e) {
       console.log('\t'+chalk.red(e));
       if (argv.errexit) {
@@ -80,6 +86,10 @@ var dirtyTargets = 0;
   summary();
   await browser.close();
 })();
+
+//function checkPage(url) {
+//  await page.goto(url);
+//}
 
 function summary() {
   console.log(
