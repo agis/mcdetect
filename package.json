@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
-    "puppeteer": "^0.10.2",
+    "puppeteer": "^1.0.0",
     "yargs": "^8.0.2"
   }
 }
