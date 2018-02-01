@@ -37,7 +37,7 @@ var dirtyTargets = 0;
   const failedReqs = {};
 
   page.on('requestfailed', r => {
-    failedReqs[r._requestId] = r.url;
+    failedReqs[r._requestId] = r.url();
   });
 
   page._client.on('Network.loadingFailed', r => {
